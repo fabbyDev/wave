@@ -1,50 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- css & icons-->
-    <link rel="stylesheet" href="./public/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./public/bootstrap/icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="./public/css/main.css">
-    <!-- title -->
-    <title>Wave - Music</title>
-</head>
-<body>
-        <!-- header -->
-        <header class="container__header">
-            <div class="wrapper-section">
-                <div class="header">
-                    <section class="header__logo">
-                        <img src="./public/images/logo/logo.png" alt="wave-music-logo">
-                        <h1 class="d-none d-sm-block h4 my-0 mx-2 fw-bold">Wave</h1>
-                    </section>
-                    <nav class="header__navigation">
-                        <ul class="m-0 p-0">
-                            <li><a class="" href="index.html">Inicio</a></li>
-                            <li><a class="" href="nosotros.html">Nosotros</a></li>
-                            <li><a class="active" href="productos.html">Productos</a></li>
-                            <li><a class="" href="contacto.html">Contacto</a></li>
-                        </ul>
-    
-                        <i class="close bi bi-x-circle position-absolute" style="top: 20px; right: 20px; font-size: 1.3em;" ></i>
-                    </nav>
-                    <section class="icons_header d-flex align-items-center gap-4">
-                        <i class="bi bi-search"></i>
-                        <i class="bi bi-heart"></i>
-                        <i class="bi bi-person-circle"></i>
-                        <i class="bi bi-bag"></i>
-                    </section>
-    
-                    <div class="hamburger fs-4" id="hamburger-nav" >
-                        <i class=" bi bi-list fw-bold fs-1"></i>
-                    </div>
-                </div>
-            </div>
-        </header>
+@extends('templates/layout')
 
-        <main class="mb-5" >
+@section('main-content')
+<main class="mb-5" >
             <div class="d-flex justify-content-center align-items-center mb-5" style="height: 250px; background: url('http://musicplace.themerex.net/wp-content/uploads/2016/07/bg-about-1.jpg');background-position: center;     background-repeat: no-repeat; background-size: cover;">
                 <h1 class="fw-bold text-light" >PRODUCTOS</h1>
                </div>
@@ -132,26 +89,4 @@
                 
             </div>
         </main>
-
-                            <!-- fotter -->
-    <footer class="bg-dark p-4 text-light">
-        <div class="d-flex  flex-column flex-sm-row  flex-wrap py-3 justify-content-between align-items-center container my-2" >
-            <h1 class=>WAVE</h1>
-            <ul class="d-flex flex-column flex-sm-row gap-5" >
-                <li>Inicio</li>
-                <li>Nosotros</li>
-                <li>Productos</li>
-                <li>Contacto</li>
-            </ul>
-        </div>
-        <ul class="d-flex gap-5 justify-content-center">
-            <li><i class="bi bi-facebook"></i></li>
-            <li><i class="bi bi-instagram"></i></li>
-            <li><i class="bi bi-twitter"></i></li>
-            <li><i class="bi bi-youtube"></i></li>
-        </ul>
-    </footer>
-
-    <script src="./public/js/navbar.js"></script>
-</body>
-</html>
+@endsection
